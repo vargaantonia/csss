@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Teljes magasság */
+    margin: 0;
+    background-image: url('image/istockphoto-501770894-2048x2048.jpg');
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.6); /* Fehér háttér, 80% átlátszóság */
+    padding: 20px; /* Belső margó */
+    border-radius: 10px; /* Lekerekített sarkok */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Árnyék */
+    backdrop-filter: blur(1px); /* Háttér elmosása */
+}
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+}
+
+.coolinput label.text {
+    font-size: 0.75rem;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #e8e8e8;
+    width: fit-content;
+    z-index: 1;
+}
+
+.coolinput input[type="text"],
+.coolinput input[type="email"],
+.coolinput input[type="number"],
+.coolinput input[type="password"] {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #000000 solid;
+    border-radius: 5px;
+    background: #e8e8e8;
+}
+
+.coolinput input[type="text"]:focus,
+.coolinput input[type="email"]:focus,
+.coolinput input[type="number"]:focus,
+.coolinput input[type="password"]:focus {
+    outline: none;
+}
+
+.password-container {
+    position: relative; /* A pozicionálás relatív */
+    display: flex; /* Rugalmas elrendezés */
+    align-items: center; /* Függőleges középre igazítás */
+
+}
+
+.eye-icon {
+    position: absolute; /* Absolút pozicionálás */
+    right: 10px; /* Távolság a mező jobb oldalától */
+    top: 50%; /* Középre igazítás */
+    transform: translateY(-50%); /* Középre igazítás */
+    font-size: 1rem; /* Ikon méret */
+    color: #000; /* Ikon szín */
+
+}
+
+.profession-section {
+    margin-top: 15px; /* Felső margó a szekcióhoz */
+}
+
+h3.text {
+    margin: 0 0 10px 0; /* Margó a cím körül */
+}
+
+button {
+    margin-top: 10px; /* Felső margó a gombnak */
+}
